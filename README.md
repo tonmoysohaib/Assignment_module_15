@@ -1,80 +1,84 @@
 # 📌 Laravel Portfolio Project  
 
-This is a Laravel-based portfolio website containing:  
-
-- ✅ **Resume Page**  
-- ✅ **Contact Page with File Upload**  
-- ✅ **File Upload Handling (with cookies & success message)**  
-- ✅ **Bootstrap 5 UI**  
+A **Laravel-based portfolio website** with a professional **Resume Page**, **Contact Form with File Upload**, and a modern **Bootstrap 5 UI**.  
 
 ---
 
-## 📹 Project Video
-You can watch the full walkthrough of the project here:  
-[Watch Video](https://drive.google.com/file/d/1QYPFnvpczsvLanLZ7wmPjP7nWk6tDFAf/view?usp=sharing)
+## 📹 Project Demo  
+🎥 Watch the walkthrough video here:  
+👉 [Project Video](https://drive.google.com/file/d/1QYPFnvpczsvLanLZ7wmPjP7nWk6tDFAf/view?usp=sharing)  
 
 ---
 
 ## 🚀 Features  
 
-- **Contact Form**:  
-  - Name, Email, Phone, Message fields  
-  - Attachment upload (PDF, DOC, Images)  
-  - Validation with error messages  
-  - Success message & cookie (`file_uploaded=true`) after upload  
+### ✅ Contact Form  
+- Fields: Name, Email, Phone, Message  
+- File Upload (PDF, DOC, Images)  
+- Validation with error messages  
+- Success message after upload  
+- Cookie set (`file_uploaded=true`)  
 
-- **Resume Page**:  
-  - Show skills, education, and experience  
+### ✅ Resume Page  
+- Display skills, education, and experience  
 
-- **File Upload**:  
-  - Stored in `storage/app/public/attachments`  
-  - Max size: `2MB`  
-  - Allowed types: `.pdf, .doc, .docx, .png, .jpg, .jpeg`  
+### ✅ File Upload Handling  
+- Files stored in `storage/app/public/attachments`  
+- Max size: `2MB`  
+- Allowed types: `.pdf, .doc, .docx, .png, .jpg, .jpeg`  
 
 ---
 
 ## 🛠️ Installation  
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/laravel-portfolio.git
-cd laravel-portfolio
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/laravel-portfolio.git
+   cd laravel-portfolio
+   ```
 
-2. Install dependencies
-composer install
-npm install && npm run dev
+2. **Install dependencies**  
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
 
-3. Set environment
-cp .env.example .env
-php artisan key:generate
+3. **Set environment variables**  
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-4. Run migrations
-php artisan migrate
+4. **Run database migrations**  
+   ```bash
+   php artisan migrate
+   ```
 
+5. **Create storage link**  
+   ```bash
+   php artisan storage:link
+   ```
 
-5. Create storage link
-php artisan storage:link
+6. **Start the development server**  
+   ```bash
+   php artisan serve
+   ```
 
+---
 
-6. Start the server
-php artisan serve
+## 💻 Usage  
 
-📝 Usage
+- Visit **Resume Page** → `/resume`  
+- Visit **Contact Page** → `/contact`  
+- Fill the form & attach a file  
 
-Go to Resume Page → /resume
+On successful submission:  
+- File is stored in `/storage/app/public/attachments`  
+- Cookie `file_uploaded=true` is set  
+- Success message is displayed  
 
-Go to Contact Page → /contact
+---
 
-Fill the form and attach a file
+## 📧 Contact  
 
-On success:
-
-File saved in /storage/app/public/attachments
-
-Cookie file_uploaded=true set
-
-Success message displayed
-
-📧 Contact
-
-If you want to collaborate or suggest improvements, feel free to reach out.
+💡 If you’d like to collaborate or suggest improvements, feel free to reach out!  
